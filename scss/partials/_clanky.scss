@@ -1,0 +1,68 @@
+.clanky{
+   background: #fff;
+   width: 100%;
+   min-height: 450px;
+   article{
+      width: 80%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: $clanky-padding 0;
+      line-height: 30px;
+      p{
+         color: $clanky-barva;
+         width: 100%;
+         font: $clanky-font;
+         text-align: justify;
+         b, strong{
+            font-weight: 700;
+            color: $hlavni-barva;
+         }
+         a{
+            color: $hlavni-barva;
+            border-bottom: 1px dotted $hlavni-barva;
+            text-decoration: none;
+            &:hover{
+               border-bottom-style: solid;
+            }
+         }
+      }
+      q{
+         color: $poznamky-barva;
+         padding: $poznamky-padding $poznamky-padding $poznamky-padding $poznamky-padding*3;
+         margin: 10px 0;
+         border-left: $poznamky-pruh-sirka solid $hlavni-pozadi;
+         display: block;
+         quotes: "" "";
+         font: $poznamky-font;
+         &.aktivni{
+            border-left-color: $hlavni-barva;
+         }
+      }
+      .tlacitko{
+         background: $tlacitka-pozadi;
+         color: #FFF;
+         width: 200px;
+         min-height: 40px;
+         border: 1px solid darken($tlacitka-pozadi, 20%);
+         display: block;
+         margin: 45px auto;
+         font: $tlacitka-font;
+         text-decoration: none;
+         text-align: center;
+         text-transform: uppercase;
+         &:hover{
+            background: lighten($tlacitka-pozadi, 7%);
+         }
+      }
+      .projekty{
+         font: $clanky-font;
+         font-size: 25px;
+         color: $hlavni-barva;
+         border-bottom: 1px dotted $hlavni-barva;
+         text-decoration: none;
+         &:hover{
+            border-bottom-style: solid;
+         }
+      }
+   }
+}

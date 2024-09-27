@@ -1,0 +1,25 @@
+%nadpisy{
+    color: $nadpisy-barva;
+    margin: 0 auto;
+    font: $nadpisy-font;
+    text-align: center;
+    opacity: .8;
+    text-transform: uppercase;
+ }
+ 
+ .nadpisy{
+    width: 100%;
+    background: url('../img/bg/01.jpg') no-repeat;
+    background-size: 100% auto;
+    background-size: cover;
+    padding: $nadpisy-padding*2 0 $nadpisy-padding 0;
+    h1{
+       @extend %nadpisy;
+    }
+    h2{
+       @extend %nadpisy;
+       font-size: 25px;
+       font-weight: 300;
+    }
+ }
+ 

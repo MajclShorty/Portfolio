@@ -1,0 +1,10 @@
+body{
+    background: $hlavni-pozadi;
+ }
+ 
+ main{
+   margin-left: $sidebar-sirka;
+   &.aktivni{
+     margin-left: 0;
+   }
+ }

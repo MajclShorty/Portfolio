@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+   <meta charset="utf-8" />
+   <meta name="author" content="Michal Krátký" />
+   <meta name="description" content="Osobní portfolio aplikací v jazyce React Native" />
+   <meta name="google" content="notranslate" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Michal Krátký - Osobní portfolio</title>
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'> 
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:600&subset=latin,latin-ext' rel='stylesheet' type='text/css'> 
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <!-- jQuery + jQuery UI -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <!-- local js -->
+    <script src="js/script.js"></script>
+</head>
+<body>
+   <sidebar>
+      <aside>
+         <div class="skryj">
+            <i class="fa fa-chevron-right aktivni"></i>
+            <i class="fa fa-chevron-left"></i>
+         </div>
+      </aside>
+      <header>
+         <a href="index.html">
+            <img src="img/M-2.png" alt="Osobní logo" />
+            <h1>Michal Krátký</h1>
+         </a>
+      </header> 
+      <nav>
+         <ul>
+            <li><a href="#" onclick="nactiObsah('pages/uvod.html')">Úvod</a></li>
+            <li><a href="#" onclick="nactiObsah('pages/omne.html')">O mně</a></li>
+            <li><a href="#" onclick="nactiObsah('pages/zamereni.html')">Zaměření</a></li>
+            <li><a href="#" onclick="nactiObsah('pages/zkusenosti.html')">Zkušenosti</a></li>
+            <li><a href="#" onclick="nactiObsah('pages/kontakt.html')">Kontakt</a></li>
+         </ul>
+      </nav>
+      <div class="social">
+         <ul>
+            <li><a href="https://www.facebook.com/michal.kratky.792/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/michal_majcl_kratky/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/michal-kratky-38216a329/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+         </ul>
+      </div>
+   </sidebar>
+
+   <main class="aktivni">
+      <header class="nadpisy" id="hlavicka">
+         <h1>Programátor, Podnikatel, Sportovec</h1>
+      </header>   
+      <section class="clanky">
+         <!--Obsah soboru pages-->
+      </section>
+      
+   </main>
+</body>
+</html>

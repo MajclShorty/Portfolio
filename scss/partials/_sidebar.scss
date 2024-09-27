@@ -1,0 +1,131 @@
+//
+//  Honza Bittner - http://honzabittner.cz
+//  ITnetwork.cz
+//
+
+sidebar{
+   width: $sidebar-sirka;
+   height: 100%;
+   background: $sidebar-pozadi;
+   position: fixed;
+   top: 0;
+   left: -$sidebar-sirka;
+   border-right: 1px solid $sidebar-ramecek-barva;
+   &.aktivni{
+     left: 0;
+   }
+   a{text-decoration: none;}
+   header{
+      width: 100%;
+      padding: $sidebar-header-padding 0;
+      border-bottom: 1px solid $sidebar-ramecek-barva;
+
+      img{
+         height: $sidebar-header-img-vyska;
+         margin: 0px auto;
+         display: block;
+      }
+      h1{
+         color: $sidebar-barva;
+         margin-top: $sidebar-header-padding;
+         text-align: center;
+         font: $sidebar-header-font;
+         text-transform: uppercase;
+      }
+   }
+   nav{
+      width: 100%;
+      padding: $sidebar-header-padding*2 0;
+      ul{
+         width: 100%;
+         li{
+            width: 100%;
+            text-align: center;
+            a{
+               color: $sidebar-barva;
+               font: $sidebar-nav-font;
+               &:hover{
+                  color: #fff;
+               }
+            }
+         }
+      }
+   }
+   aside{
+      background: $sidebar-pozadi;
+      height: 100%;
+      width: $sidebar-aside-sirka;
+      border-right: $sidebar-aside-ramecek-sirka solid $hlavni-barva;
+      position:absolute;
+      top: 0;
+      right: - $sidebar-aside-sirka - $sidebar-aside-ramecek-sirka - 1;            
+   }
+}
+
+.social{
+   background: $sidebar-pozadi;
+   border-top: 1px solid $sidebar-ramecek-barva;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: $sidebar-sirka + $sidebar-aside-sirka + 1;
+   height: $social-vyska;
+   ul{
+      height: 100%;
+      padding-top: ($social-vyska - $social-polozka-vyska)/2;
+      float: left;
+      position: relative;
+      left: 50%;
+      li{
+         height: $social-polozka-vyska;
+         width: $social-polozka-vyska;
+         margin: 0 $social-padding;  
+         float: left; 
+         position: relative;
+         right: 50%;
+         a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            i{
+               width: 100%;
+               height: 100%;
+               border-radius: 50%;
+               display: block;
+               background: $sidebar-barva;
+               color: $sidebar-pozadi;
+               text-align: center;
+               font-size: $social-polozka-velikost;
+               line-height: $social-polozka-vyska;
+            }
+            &:hover{
+               i{
+                  background: #fff;
+               }
+            }
+         }
+      }
+   }
+}
+
+.skryj{
+   color: $sidebar-barva;
+   width: $sidebar-aside-sirka;
+   height: (3*$sidebar-header-padding) + $sidebar-header-img-vyska + $sidebar-header-font-radek-vyska;
+   cursor: pointer;
+   border-bottom: 1px solid $sidebar-ramecek-barva;
+   &:hover{
+      color: #fff;
+   }
+   i{
+      width: 100%;
+      height: 100%;
+      line-height: (3*$sidebar-header-padding) + $sidebar-header-img-vyska + $sidebar-header-font-radek-vyska;
+      display: none;  
+      font-size: $sidebar-aside-ikonka-font-size;
+      text-align: center;
+      &.aktivni{
+         display: block;
+      }
+   }
+}

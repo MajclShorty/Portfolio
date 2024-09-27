@@ -1,0 +1,292 @@
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1;
+}
+
+* {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+ul {
+  list-style: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+body {
+  background: #E3E3E3;
+}
+
+main {
+  margin-left: 180px;
+}
+main.aktivni {
+  margin-left: 0;
+}
+
+.nadpisy h2, .nadpisy h1 {
+  color: #212121;
+  margin: 0 auto;
+  font: 700 50px/1 "Roboto Condensed";
+  text-align: center;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.nadpisy {
+  width: 100%;
+  background: url("../img/bg/01.jpg") no-repeat;
+  background-size: 100% auto;
+  background-size: cover;
+  padding: 200px 0 100px 0;
+}
+.nadpisy h2 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.clanky {
+  background: #fff;
+  width: 100%;
+  min-height: 450px;
+}
+.clanky article {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 0;
+  line-height: 30px;
+}
+.clanky article p {
+  color: #333;
+  width: 100%;
+  font: 300 18px/1.5 "Roboto Condensed";
+  text-align: justify;
+}
+.clanky article p b, .clanky article p strong {
+  font-weight: 700;
+  color: #BA387D;
+}
+.clanky article p a {
+  color: #BA387D;
+  border-bottom: 1px dotted #BA387D;
+  text-decoration: none;
+}
+.clanky article p a:hover {
+  border-bottom-style: solid;
+}
+.clanky article q {
+  color: #777;
+  padding: 5px 5px 5px 15px;
+  margin: 10px 0;
+  border-left: 2px solid #E3E3E3;
+  display: block;
+  quotes: "" "";
+  font: 300 25px/25px "Roboto Condensed";
+}
+.clanky article q.aktivni {
+  border-left-color: #BA387D;
+}
+.clanky article .tlacitko {
+  background: #BA387D;
+  color: #FFF;
+  width: 200px;
+  min-height: 40px;
+  border: 1px solid #6c2048;
+  display: block;
+  margin: 45px auto;
+  font: 700 18px/40px "Roboto Condensed";
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.clanky article .tlacitko:hover {
+  background: #c94c8f;
+}
+.clanky article .projekty {
+  font: 300 18px/1.5 "Roboto Condensed";
+  font-size: 25px;
+  color: #BA387D;
+  border-bottom: 1px dotted #BA387D;
+  text-decoration: none;
+}
+.clanky article .projekty:hover {
+  border-bottom-style: solid;
+}
+
+sidebar {
+  width: 180px;
+  height: 100%;
+  background: #272727;
+  position: fixed;
+  top: 0;
+  left: -180px;
+  border-right: 1px solid #161616;
+}
+sidebar.aktivni {
+  left: 0;
+}
+sidebar a {
+  text-decoration: none;
+}
+sidebar header {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #161616;
+}
+sidebar header img {
+  height: 55px;
+  margin: 0px auto;
+  display: block;
+}
+sidebar header h1 {
+  color: #D8D8D8;
+  margin-top: 10px;
+  text-align: center;
+  font: 600 18px/22px "Exo 2";
+  text-transform: uppercase;
+}
+sidebar nav {
+  width: 100%;
+  padding: 20px 0;
+}
+sidebar nav ul {
+  width: 100%;
+}
+sidebar nav ul li {
+  width: 100%;
+  text-align: center;
+}
+sidebar nav ul li a {
+  color: #D8D8D8;
+  font: 200 16px/1.75 "Roboto Condensed";
+}
+sidebar nav ul li a:hover {
+  color: #fff;
+}
+sidebar aside {
+  background: #272727;
+  height: 100%;
+  width: 90px;
+  border-right: 2px solid #BA387D;
+  position: absolute;
+  top: 0;
+  right: -93px;
+}
+
+.social {
+  background: #272727;
+  border-top: 1px solid #161616;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 271px;
+  height: 40px;
+}
+.social ul {
+  height: 100%;
+  padding-top: 7.5px;
+  float: left;
+  position: relative;
+  left: 50%;
+}
+.social ul li {
+  height: 25px;
+  width: 25px;
+  margin: 0 3px;
+  float: left;
+  position: relative;
+  right: 50%;
+}
+.social ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.social ul li a i {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  background: #D8D8D8;
+  color: #272727;
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+}
+.social ul li a:hover i {
+  background: #fff;
+}
+
+.skryj {
+  color: #D8D8D8;
+  width: 90px;
+  height: 107px;
+  cursor: pointer;
+  border-bottom: 1px solid #161616;
+}
+.skryj:hover {
+  color: #fff;
+}
+.skryj i {
+  width: 100%;
+  height: 100%;
+  line-height: 107px;
+  display: none;
+  font-size: 25px;
+  text-align: center;
+}
+.skryj i.aktivni {
+  display: block;
+}
+
+.radek {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.radek .card-kontejner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 20px 20px 0;
+}
+.radek .card-kontejner .card {
+  border: 1px solid #161616;
+  border-radius: 5px;
+  padding: 20px;
+  width: 200px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.radek .card-kontejner .card img {
+  width: 70px;
+  height: 70px;
+  margin-right: 35px;
+  border-radius: 5px;
+}
+.radek .card-kontejner .card .obsah .kategorie {
+  font: 200 16px/1.75 "Roboto Condensed";
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+.radek {
+   display: flex;
+   flex-direction: row;
+ 
+   .card-kontejner {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 20px 20px 0;
+      .card {
+        border: 1px solid #161616;
+        border-radius: 5px;
+        padding: 20px;
+        width: 200px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        img {
+           width: 70px;
+           height: 70px;
+           margin-right: 35px;
+           border-radius: 5px;
+        }
+        .obsah {
+            .kategorie{
+               font: $sidebar-nav-font;
+            }
+        }
+      }
+   }
+}
+ 

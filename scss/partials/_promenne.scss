@@ -1,0 +1,43 @@
+$hlavni-pozadi: #E3E3E3;
+$hlavni-barva: #BA387D;
+$hlavni-font: 'Roboto Condensed';
+//nadpisy
+$nadpisy-barva: #212121;
+$nadpisy-font: 700 50px/1 $hlavni-font;
+$nadpisy-padding: 100px;
+//clanky
+$clanky-barva: #333;
+$clanky-font: 300 18px/1.5 $hlavni-font;
+$clanky-padding: 50px;
+//poznamky
+$poznamky-barva: #777;
+$poznamky-pruh: $hlavni-pozadi; // #E3E3E3
+$poznamky-pruh-aktivni: $hlavni-barva; // #BA387D
+$poznamky-pruh-sirka: 2px;
+$poznamky-padding: 5px;
+$poznamky-font: 300 25px/25px $hlavni-font;
+//tlacitka
+$tlacitka-pozadi: $hlavni-barva;
+$tlacitka-font: 700 18px/40px $hlavni-font;
+//sidebar
+$sidebar-sirka: 180px;
+$sidebar-pozadi: #272727;
+$sidebar-ramecek-barva: #161616;
+$sidebar-barva: #D8D8D8;
+$sidebar-header-padding: 10px;
+$sidebar-header-font-radek-vyska: 22px;
+$sidebar-header-font: 600 18px/#{$sidebar-header-font-radek-vyska} 'Exo 2';
+$sidebar-header-img-vyska: 55px;
+$sidebar-nav-font: 200 16px/1.75 $hlavni-font;
+//aside
+$sidebar-aside-sirka: 90px;
+$sidebar-aside-ramecek-sirka: 2px;
+$sidebar-aside-ikonka-font-size: 25px;
+$sidebar-kruhy-sirka: 9px;
+//social
+$social-vyska: 40px;
+$social-polozka-vyska: 25px;
+$social-polozka-velikost: 15px;
+$social-padding: 3px;
+//cards
+
